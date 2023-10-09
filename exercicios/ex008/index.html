@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <!--Style serve para colocar um estilo próprio em algo específico (nesse caso ele colocou na tag do <matk>)-->
+    <style>
+        mark {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+        <p>Nessa frase temos um <b>termo em negrito</b> <!--a tag <b> coloca um trecho em negrito-->
+        usando a tag &lt;b&gt; &lt;/b&gt; (Não semântica)</p>
+        <p>Nesta frase, tenho um <strong>termo em destaque</strong> <!--a tag <strong> coloca um trecho em negrito (Melhor)-->
+        usando a tag &lt;strong&gt; &lt;/strong&gt; (Semântico)</p>
+    <hr>
+    <h2>Itálico / Ênfase</h2>
+        <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântico)</p> <!--a tag <i> serve para deixar um trecho em itálico-->
+        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; &lt;/em&gt; (semântico)</p> <!--a tag <em> serve para deixar um trecho em itálico (Melhor)-->
+    <hr>
+    <h2>Testo marcado: </h2>
+        <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt; &lt;/mark&gt;</p> <!-- a tag <mark> funciona como um marca texto-->
+        <p>E no outro parágrafo, temos <mark> outro texto marcado</mark> no final.</p>
+    <hr>
+    <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big> e um  <!-- a tag <big> serve para deixar um trecho grande (Provavelmente vai sair de uso)-->
+            <small>texto pequeno</small> nesse parágrafo</p>  <!-- a tag <small> serve para deixar um trecho pequeno -->
+    <hr>
+    <h2>Texto deletado</h2>
+        <p>Podemos marcar um <dell>texto como excluído</dell> para indicar que ele
+            deve ser lido, mas não considerado
+        </p>
+    <h2>Texto inserido</h2>
+        <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma  <!-- a tag <ins> serve para deixar um sublinhado, mas essa tag da ideia de texto inserido -->
+            ênfase e indicar que ele foi adicionado depois
+        </p>
+        <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; &lt;/u&gt; (Não semântica)</p> <!-- a tag <u> serve para deixar um sublinhado -->
+    <hr>
+    <h2>Texto sobrescrito</h2> <!--TEXTO EM CIMA -->
+        <p>Para inserir coisas do tipo x<sup>20</sup> + 3 usando &lt;sup&gt; &lt;/sup&gt;</p> <!-- a tag <sup> serve para deixar o texto em cima, como no exemplo desse parágrafo -->
+    <h2>Texto subscrito</h2> <!-- TEXTO EM BAIXO -->
+        <p>Para inserir coisas do tipo H<sub>2</sub>O usando &lt;sub&gt; &lt;/sub&gt;</p> <!-- a tag <sub> serve para deixar o texto em baixo, como no exemplo desse parágrafo -->
+</body>
+</html>

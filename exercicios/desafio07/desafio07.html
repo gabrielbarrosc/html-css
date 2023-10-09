@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 06</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F929</p>
+    <picture>
+        <source media="(max-width: 790px )" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Foto bonita">
+    </picture>
+    <hr>
+    <h1>Adicionando um vídeo e um áudio nesse desafio</h1>
+    <audio preload="none" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mp3">
+        <p>áudio não é compatível com o seu navegador</p>
+    </audio>
+    <video width="600px" controls >
+        <source src="midia/pexels-martin-sanchez-9882072 (2160p).mp4" type="video/mp4">
+        <p>Vídeo não compatível com o seu navegador</p>
+    </video>
+</body>
+</html>

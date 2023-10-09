@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Flexbox</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+        
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
+            background-color: red;
+            height: 500px;
+        }
+        #bloco1{
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        #bloco2{
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(87, 224, 82);
+        }
+        #bloco3{
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 174, 255);
+        }
+        #imagem{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div id="bloco1">1</div>
+        <div id="bloco2">2</div>
+        <div id="bloco3">3</div>
+    </main>
+    <div id="imagem"><img src="imagens/paisagem-p.png"></div>
+</body>
+</html>

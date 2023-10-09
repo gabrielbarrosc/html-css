@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.links{
+    display: inline;
+}
+.container{
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 0 auto;
+}
+.perfil{
+    display: flex;
+    width: 35%;
+}
+.perfil > h1{
+    display: flex;
+    color: white;
+}
+.social{
+    display: flex;
+    width: 25%;
+}
+header{
+    background-color: black;
+    width: 100%;
+}
+.menus{
+    width: 50%;
+}

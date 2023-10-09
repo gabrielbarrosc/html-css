@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        # --> id
+        . --> classe
+        : --> pseudo class
+        :: --> pseudo elemento
+        > --> children
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*Retira o sublinhado dos links*/
+            font-weight: bold;
+        }
+        a:visited{ /*Se o link já tiver sido aberto (visitado), vai ficar roxo*/
+            color: purple;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color:rgb(255, 216, 216);        }
+        /*Pseudo elementos usa dois (::), enquanto o pseudo classes só um (:)*/
+        .especial::after{ 
+            content: ' [link]'; /*o content adiciona um texto na tag escolhida (a)*/
+            text-decoration: none;
+            font-weight: none;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/gabrielbarsc/" target="_blank" rel="externa">Meu insta</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" class="especial" target="_blank" rel="externa">Canal do YTB</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial" target="_blank" rel="externa">Site do CursoemVídeo</a></li>
+    </ul>
+</body>
+</html>
