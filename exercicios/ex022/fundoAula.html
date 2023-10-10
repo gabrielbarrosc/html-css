@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando a IMG</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        :root{
+            --cor1: cyan;
+        }
+        div{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 10px black;
+            border: 3px solid var(--cor1);
+        }
+        header{
+            background-image: url(https://t.ctcdn.com.br/XaXdTYtdLCzXP3Hbhsl_TCYGqHo=/0x127:2640x1614/2640x1485/smart/i435780.png);
+            background-size: 100% 100%;
+            background-position: top center;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.39);
+        }
+        #q1{
+            background-image: url(https://leagueofitems.com/images/champions/tiles/256/35.webp);
+            background-position: center center;
+        }
+        #q2{
+            background-image: url(https://leagueofitems.com/images/champions/tiles/256/64.webp);
+            background-position: center center;
+        }
+        #q3{
+            background-image: url(https://leagueofitems.com/images/champions/tiles/256/79.webp);
+            background-position: center center;
+        }
+        #q4{
+            background-image: url(https://leagueofitems.com/images/champions/tiles/256/32.webp);
+            background-position: center center;
+        }
+        div:hover{
+            box-shadow: inset 2px 0px 10px 5px rgb(0, 0, 0);
+            scale: 1.2;
+            transition: 0.5s;
+            box-shadow: 5px 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <a href="https://universe.leagueoflegends.com/pt_BR/story/champion/shaco/" target="_blank">
+                <div id="q1"></div>
+            </a>
+            <a href="https://universe.leagueoflegends.com/pt_BR/story/champion/leesin/" target="_blank">
+                <div id="q2"></div>
+            </a>
+            <a href="https://leagueofitems.com/images/champions/tiles/256/32.webp" target="_blank">
+                <div id="q3"></div>
+            </a>
+            <a href="https://universe.leagueoflegends.com/pt_BR/story/champion/amumu/" target="_blank">
+                <div id="q4"></div>
+            </a>
+
+        </header>
+</body>
+</html>
