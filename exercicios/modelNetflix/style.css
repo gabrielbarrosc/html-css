@@ -79,7 +79,23 @@ main > article{
 }
 #shaco{
     background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
-    background-position: left center;
+    background-size: 120% 100%;
+    background-position: center center;
+}
+#lee{
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
+    background-size: 120% 100%;
+    background-position: center center;
+}
+#gragas{
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
+    background-size: 120% 100%;
+    background-position: center center;
+}
+#amumu{
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
+    background-size: 120% 100%;
+    background-position: center center;
 }
 .foto-champ{
     display: inline-block;
