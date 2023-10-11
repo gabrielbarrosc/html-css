@@ -32,10 +32,12 @@ section{
 #bg1{
     background-image: url(imagens/background001.jpg);
     background-position: right center;
-    background-attachment: scroll, local;
+    background-attachment: fixed;
 }
 #bg2{
     background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
 }
 .fundo-bg{
     box-shadow: inset 5px 10px 15px 6px rgba(0, 0, 0, 0.253);
