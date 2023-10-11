@@ -15,11 +15,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 0);
 }
-#lol{
-    color: var(--cor-primaria);
-    border-radius: 5px;
-    font-weight: bold;
-}
+
 header{
     text-shadow: 2px 0px 0px 5px black;
     background-image: url(jungler.jpg);
@@ -39,17 +35,20 @@ header{
     margin-bottom: 20px;
 }
 header p{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
     margin: 20px;
     font-size: 20px;
+    background-color: var(--cor-primaria);
 }
 #link-biel > a{
     text-decoration: none;
     color: white;
 }
-#link-biel > a:hover{
-    color: gray;
+header p:hover{
+    background-color: rgb(175, 22, 22);
     transition: 0.5s;
-    font-weight: bold;
 }
 header h1{
     line-height: 0.9em;
@@ -79,22 +78,22 @@ main > article{
 }
 #shaco{
     background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
-    background-size: 120% 100%;
-    background-position: center center;
+    background-size: cover;
+    background-position: center top;
 }
 #lee{
-    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
-    background-size: 120% 100%;
-    background-position: center center;
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg);
+    background-size: cover;
+    background-position: center top;
 }
 #gragas{
-    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
-    background-size: 120% 100%;
-    background-position: center center;
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg);
+    background-size: cover;
+    background-position: center top;
 }
 #amumu{
-    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg);
-    background-size: 120% 100%;
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg);
+    background-size: cover;
     background-position: center center;
 }
 .foto-champ{
