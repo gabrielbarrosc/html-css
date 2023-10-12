@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        /*position: sticky --> Vai colar no top da página quando passar o scroll*/
+        thead th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(105, 105, 105);
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(230, 218, 218);
+        }
+        td,th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        thead,tfoot{
+            background-color: rgb(105, 105, 105);
+            color: white;
+        }
+        tbody > tr:nth-child(odd){ /*De 2 em 2 ele vai colocando o style*/
+            background-color: lightgray;
+        }
+        .num{
+            text-align: right;
+        }
+        p{
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes:
+        TABLE
+            CAPTION - "Título da tabela (LEGENDA)"
+            THEAD
+                tr,td,th
+            TBODY
+                tr,td,th
+            TFOOT
+                tr,td,th
+    -->
+
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th> <!--Colocando tamanho específico-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 791 688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 116 132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 609 601</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>130 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui temporibus quisquam doloremque animi id delectus dolore et perferendis, nihil reiciendis laborum possimus. Numquam voluptas itaque temporibus quidem. Voluptatibus, fugit sint. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nam voluptates eius. Modi voluptatum impedit corrupti perferendis labore dolorum ipsum illum rem accusantium quos! In, sapiente. Fuga perferendis incidunt placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita eum? Pariatur, velit ratione. Veniam ad eveniet modi repellat tempora illo asperiores, voluptas amet, recusandae iste a facilis suscipit saepe.</p>
+</body>
+</html>
