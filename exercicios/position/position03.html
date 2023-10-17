@@ -5,28 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .relative{
-            position: relative;
-            height: 100px;
-            background-color: chocolate;
-            border: 1px solid black;
+        .conteudo{
+            display: flex;
+            justify-content: flex-end;
         }
         .absolute{
             position: absolute;
-            height: 75px;
-            width: 75px;
-            top: 10px;
-            background-color: rgb(44, 20, 4);
+            width: 269px;
+            height: 472px;
+            top: 80px;
+            background-color: cyan;
         }
         .celular{
-            display: inline-flex;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .social{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .icone{
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            border: 1px solid red;
+            border-radius: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="relative"></div>
-    <div class="relative">
-    </div>
-    <div class="celular"><img src="frame-iphone.png"><div class="absolute"></div></div>
+    <main class="conteudo">
+        <div class="social">
+            <div class="icone"></div>
+            <div class="icone"></div>
+            <div class="icone"></div>
+            <div class="icone"></div>
+        </div>
+            <div class="celular"><img src="frame-iphone.png"><div class="absolute"></div></div>
+    </main>
 </body>
 </html>
