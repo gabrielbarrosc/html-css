@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de form</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <!--Fieldset vai agrupar os elementos-->
+        <fieldset>
+            <!--legend é o título do agrupamento-->
+            <legend>Dados pessoais:</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="inome" id="inome" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="iemail" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="itel" id="itel" autocomplete="tel" placeholder="(xx) xxxx-xxxx" required>
+                <!--Estudar mais sobre RegEx-->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
