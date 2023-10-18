@@ -7,16 +7,20 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.js" method="get">
+    <form action="cadastro.js" method="post" autocomplete="on">
         <p>
-            <label for="iusu">Usuário: </label>
-            <input type="text" name="iusu" id="iusu">
+            <label for="iusuario">Usuário: </label>
+            <!--required significa que o preenchimento do campo é obrigatório-->
+            <!--minlength="5" significa que tem que ser no mínimo 5 caractere.
+                maxlenght="15" e no máximo 15-->
+            <input type="text" name="iusuario" id="iusuario" required minlength="5" maxlength="15" size="15" autocomplete="username" placeholder="seu nome"> <!--placeholder é a marca d'água de dica dentro do input-->
         </p>
         <p>
             <label for="isenha">Senha: </label>
-            <input type="password" name="isenha" id="isenha">
+            <input type="password" name="isenha" id="isenha" required minlength="8"
+            maxlength="20" autocomplete="current-password">
         </p>
-        <input type="button" value="Enviar">
+        <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </form>
 </body>
