@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 003</title>
+    <style>
+        *{
+
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="iusu" id="iusu" minlength="5" maxlength="15" placeholder="Preencha seu nome" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="imedia">Média: </label>
+            <!--Só será possível média entre 0 e 10-->
+            <input type="number" name="imedia" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required> <!--step é passo, de quanto em quanto uma nota muda-->
+        </p>
+        <p>
+            <label for="idia">Dia da prova: </label>
+            <input type="date" name="idia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova: </label>
+            <input type="time" name="ihora" id="ihora">
+        </p>
+        <p>
+            <label for="imes">Período Letivo: </label>
+            <input type="month" name="imes" id="imes">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
