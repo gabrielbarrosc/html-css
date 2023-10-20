@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 003</title>
+    <link rel="stylesheet" href="cadastro-projeto003.css">
+</head>
+<body>
+    <main class="container">
+        <div class="cabecalho">
+            <h1 class="titulo">Cadastre-se</h1>
+            <div id="linha"></div>
+            <button type="submit" name="entrar" id="entrar">Entrar</button>
+        </div>
+        <div class="conteudo">
+            <form action="cadastro.js" method="get" autocomplete="on">
+
+                <section class="conteudo-topico">
+                    <div class="topicos-form">
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="Digite seu nome..." required>
+                    </div>
+                    <div class="topicos-form">
+                        <label for="isobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome..." required>
+                    </div>
+                </section>
+
+                <section class="conteudo-topico">
+                    <div class="topicos-form">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail..." required>
+                    </div>
+                    <div class="topicos-form">
+                        <label for="icelular">Celular</label>
+                        <input type="tel" name="celular" id="icelular" placeholder="(88) 8888-8888" required>
+                    </div>
+                </section>
+
+                <section class="conteudo-topico">
+                    <div class="topicos-form">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha..." minlength="3" required>
+                    </div>
+                    <div class="topicos-form">
+                        <label for="iisenha">Confirme sua senha</label>
+                        <input type="password" name="senha" id="iisenha" placeholder="Confirme sua senha..." minlength="3" required>
+                    </div>
+                </section>
+                <div class="genero">
+                        <h3>Gênero</h3>
+                        <div class="genero-topico">
+                            <div><input type="radio" name="genero" id="genero" value="mas"> Masculino</div>
+                            <div><input type="radio" name="genero" id="genero" value="femi"> Feminino</div>
+                            <div><input type="radio" name="genero" id="genero" value="outro"> Outro</div>
+                            <div><input type="radio" name="genero" id="genero" value="non"> Prefiro não informar</div>
+                        </div>
+                </div>
+                <div class="enviar">
+                    <button type="submit" name="enviar" id="enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
