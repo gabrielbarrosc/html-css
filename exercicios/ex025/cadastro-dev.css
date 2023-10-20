@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor-texto: #0f0e0e;
+    --cor-formulario: #faf4f4;
+    --cor-principal: #f90734;
+    --cor-secundaria: #780e1a;
+    --font-principal: 'Roboto';
+}
+
+body{
+    background-image: linear-gradient(75deg, var(--cor-principal), var(--cor-secundaria));
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+.container{
+    background-color: var(--cor-formulario);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px;
+}
+.titulo{
+    text-align: center;
+    color: var(--cor-principal);
+    margin: 10px;
+}
+.conteudo{
+    padding-bottom: 15px;
+    color: var(--cor-texto);
+}
+.topo{
+    display: flex;
+    gap: 15px;
+}
+.nome{
+    display: inline-block;
+}
+.sobrenome{
+    display: inline-block;
+}
+.nome input{
+    padding: 4px;
+    border: 1px solid --cor-texto;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.116);
+}
+.sobrenome input{
+    padding: 4px;
+    border: 1px solid --cor-texto;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.116);
+}
+.email input{
+    padding: 4px;
+    border: 1px solid --cor-texto;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.116);
+}
+.funcao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.conteudo .senioridade option{
+    display: inline-block;
+}
+.habilidades input{
+    margin: 15px 0px;
+}
+textarea{
+    width: 100%;
+}
+

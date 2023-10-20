@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --fontPrincipal: 'Roboto';
+}
+body{
+    background-color: rgb(224, 224, 224);
+    font-family: var(--fontPrincipal);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(246, 250, 253);
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(187, 222, 255, 0.274);
+}
+.titulo{
+    text-align: center;
+    font-weight: 900;
+    color: rgb(43, 114, 180);
+    font-size: 3em;
+    margin-bottom:25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(187, 222, 255);
+}
+.div-conteudo input{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.logar{
+    text-align: center;
+}
+.logar input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(43, 114, 180);
+    color: rgb(246, 250, 253);;
+    font-size: 1.2em;
+}
+.logar input:hover{
+    background-color: rgb(75, 115, 151);
+    transition: 0.5s;
+}
+.conteudo{
+    padding: 10px 20px;
+}
+.rodape{
+    text-align: center;
+    background-color: rgb(187, 222, 255);
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+.rodape input{
+    padding: 5px;
+    border: 1px solid rgb(43, 114, 180);
+    border-radius: 5px;
+}

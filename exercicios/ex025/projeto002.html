@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+    <link rel="stylesheet" href="cadastro-dev.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="titulo">Cadastro de DEVs</h1>
+        <form action="cadastro.js" method="get">
+            <section class="topo">
+                <div class="conteudo">
+                    <div class="nome">
+                        <label for="inome">Nome</label><br>
+                        <input type="text" name="nome" id="inome" placeholder="Digite seu nome...">
+                    </div>
+                </div>
+                <div class="conteudo">
+                    <div class="sobrenome">
+                        <label for="isobrenome">Sobrenome</label><br>
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome...">
+                    </div>
+                </div>
+            </section>
+            <div class="conteudo">
+                <div class="email">
+                    <label for="iemail">Email</label><br>
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu email...">
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="aplicacao">
+                    <label for="iaplicacao">De qual lado da aplicação você desenvolve?</label>
+                            <div class="funcao">
+                                <label><input type="radio" name="iaplicacao" id="iaplicacao" value="frontend"> Front-end</label>
+                                <label><input type="radio" name="iaplicacao" id="iaplicacao" value="backend"> Back-end</label>
+                                <label><input type="radio" name="iaplicacao" id="iaplicacao" value="full"> Fullstack</label>
+                            </div>
+                        </div>
+            </div>
+            <div class="conteudo">
+                <div class="senioridade">
+                    <label for="isenioridade">Senioridade</label><br>
+                    <select name="senioridade" id="isenioridade">
+                        <option value="">--ESCOLHA--</option>
+                        <option value="estagiario">Estagiário</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="junior">Sênior</option>
+                    </select>
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="habilidades">
+                    <label for="ihabilidade">Selecione as tecnologias que utiliza:</label><br>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="html">HTML</label>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="css">CSS</label>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="JS">JavaScript</label>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="php">PHP</label>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="c">C#</label>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="python">Python</label>
+                    <label><input type="checkbox" name="ihabilidade" id="ihabilidade" value="java">Java</label>
+                </div>
+                <div class="experiencia">
+                    <label>Conte um pouco mais da sua experiência</label><br>
+                    <textarea name="experiencia" id="experiencia" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

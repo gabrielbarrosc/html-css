@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="sistema-login.css">
+</head>
+<body>
+    <main class="container">
+        <form action="cadastro.js" method="get" autocomplete="on">
+            <h1 class="titulo">Login</h1>
+            <div class="conteudo">
+                <div class="div-conteudo">
+                    <label for="iemail">Seu e-mail:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="Digite seu email...">
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="div-conteudo">
+                    <label for="isenha">Sua senha:</label>
+                    <input type="password" name="senha" id="isenha" required minlength="3" maxlength="10" placeholder="Digite sua senha...">
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="div-check">
+                    <label for="login"><input type="checkbox" name="login" id="login"> Manter-me logado</label>
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="logar">
+                    <input type="submit" value="Logar">
+                </div>
+            </div>
+            <div class="rodape">
+                <label for="cadastro">Ainda não tem conta?</label>
+                <input type="submit" name="cadastro" id="cadastro" value="Cadastre-se">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
