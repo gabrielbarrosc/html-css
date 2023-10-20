@@ -39,6 +39,7 @@
             text-decoration: none;
             color: white;
             font-size: 0.9em;
+            position: relative;
         }
         .conteudo{
             display: flex;
@@ -51,8 +52,19 @@
             text-align: center;
         }
         .titulo{
+            position: relative;
+        }
+        .texto{
             font-weight: 900;
             font-size: 65px;
+            position: relative;
+        }
+        .titulo::after{
+            position: absolute;
+            contain: " ";
+            background-color: aqua;
+            width: 100%;
+            height: 4px;
         }
         .botao{
             display: flex;
@@ -87,7 +99,7 @@
         </div>
         <section class="conteudo">
             <div class="texto-conteudo">
-                <h1 class="titulo">DESIGN YOUR HOUSE</h1>
+                <h1 class="texto">DESIGN YOUR HOUSE</h1>
                 <p>Subscribe Easy Tutorials YouTube Channel to watch more videos, press the bell icon to get latest updates.</p>
                 <div class="botao">
                     <div class="box">WATCH MORE</div>
