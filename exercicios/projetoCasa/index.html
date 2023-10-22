@@ -4,87 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site para estudo</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-            height: 100vh;
-            position: relative;
-            background-color: rgb(46, 46, 46);
-        }
-        .container{
-            color: white;
-            
-        }
-        .cabecalho{
-            padding: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .cabecalho:hover{
-            box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.13);
-        }
-        .link-cabecalho{
-            display: flex;
-            flex-direction: row;
-            gap: 25px;
-        }
-        .link-cabecalho a {
-            text-decoration: none;
-            color: white;
-            font-size: 0.9em;
-            position: relative;
-        }
-        .conteudo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100vh;
-        }
-        .texto-conteudo{
-            text-align: center;
-        }
-        .titulo{
-            position: relative;
-        }
-        .texto{
-            font-weight: 900;
-            font-size: 65px;
-            position: relative;
-        }
-        .titulo::after{
-            position: absolute;
-            contain: " ";
-            background-color: aqua;
-            width: 100%;
-            height: 4px;
-        }
-        .botao{
-            display: flex;
-            justify-content: center;
-        }
-        .box{
-            margin: 15px;
-            padding: 15px 50px;
-            border-radius: 50px;
-            border: 2px solid rgb(0, 124, 128);
-        }
-        .box:hover{
-            background-color: rgb(0, 124, 128);
-            transition: 0.5s;
-        }
-    </style>
+    <link rel="stylesheet" href="ProjetoCasa.css">
 </head>
 <body>
     <div id="overlay"></div>
-    <main class="container">
         <div class="cabecalho-principal">
             <header class="cabecalho">
                 <h2 class="titulo-cabecalho">SUA LOGO</h2>
@@ -97,15 +20,33 @@
                 </nav>
             </header>
         </div>
-        <section class="conteudo">
-            <div class="texto-conteudo">
-                <h1 class="texto">DESIGN YOUR HOUSE</h1>
-                <p>Subscribe Easy Tutorials YouTube Channel to watch more videos, press the bell icon to get latest updates.</p>
-                <div class="botao">
-                    <div class="box">WATCH MORE</div>
-                    <div class="box">SUBSCRIBE</div>
+    <main class="conteudo">
+        <section class="conteudo-casa">
+            <div class="imagem"></div>
+        </section>
+        <section class="conteudo-formulario">
+            <h1 class="titulo">Cadastre-se</h1>
+            <button type="submit" value="Entrar">Entrar</button>
+            <form action="#" method="get" autocomplete="on">
+                <div class="formulario">
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome">
+                    <label for="isobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="isobrenome">
                 </div>
-            </div>
+                <div class="formulario">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail">
+                    <label for="icelular">Celular</label>
+                    <input type="tel" name="celular" id="icelular">
+                </div>
+                <div class="formulario">
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha">
+                    <label for="iisenha">Confirme sua senha</label>
+                    <input type="password" name="senha2" id="iisenha">
+                </div>
+            </form>
         </section>
     </main>
 </body>
