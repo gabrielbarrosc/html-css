@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="ProjetoCasa.css">
 </head>
 <body>
-    <div id="overlay"></div>
         <div class="cabecalho-principal">
             <header class="cabecalho">
                 <h2 class="titulo-cabecalho">SUA LOGO</h2>
@@ -20,34 +19,64 @@
                 </nav>
             </header>
         </div>
-    <main class="conteudo">
-        <section class="conteudo-casa">
-            <div class="imagem"></div>
-        </section>
-        <section class="conteudo-formulario">
-            <h1 class="titulo">Cadastre-se</h1>
-            <button type="submit" value="Entrar">Entrar</button>
+    </div>
+    <div class="pagina">
+        <main class="corpo">
             <form action="#" method="get" autocomplete="on">
-                <div class="formulario">
-                    <label for="inome">Nome</label>
-                    <input type="text" name="nome" id="inome">
-                    <label for="isobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="isobrenome">
+                <div class="cabecalho-form">
+                    <h1 class="titulo">Cadastre-se</h1>
+                    <button type="submit" name="entrar" value="entrar">Entrar</button>
                 </div>
-                <div class="formulario">
-                    <label for="iemail">E-mail</label>
-                    <input type="email" name="email" id="iemail">
-                    <label for="icelular">Celular</label>
-                    <input type="tel" name="celular" id="icelular">
-                </div>
-                <div class="formulario">
-                    <label for="isenha">Senha</label>
-                    <input type="password" name="senha" id="isenha">
-                    <label for="iisenha">Confirme sua senha</label>
-                    <input type="password" name="senha2" id="iisenha">
+                <section class="corpo-formulario">
+                    <div class="nome">
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="Digite seu nome..." required>
+                    </div>
+                    <div class="sobrenome">
+                        <label for="isobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome..." required>
+                    </div>
+                </section>
+                <section class="corpo-formulario">
+                    <div class="email">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu E-mail..." required>
+                    </div>
+                    <div class="celular">
+                        <label for="icelular">Celular</label>
+                        <input type="tel" name="celular" id="icelular" placeholder="Digite seu celular..." required>
+                    </div>
+                </section>
+                <section class="corpo-formulario">
+                    <div class="senha">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha..." required>
+                    </div>
+                    <div class="conSenha">
+                        <label for="iisenha">Confirme sua senha</label>
+                        <input type="password" name="senha" id="iisenha" placeholder="Confirme sua senha..." required>
+                    </div>
+                </section>
+                <section class="genero">
+                    <h3>Gênero</h3>
+                    <div class="generos-form">
+                        <label for="genero"><input type="radio" name="genero" id="masc"> Masculino</label>
+                        <label for="genero"><input type="radio" name="genero" id="femi"> Feminino</label>
+                        <label for="genero"><input type="radio" name="genero" id="outro"> Outro</label>
+                        <label for="genero"><input type="radio" name="genero" id="no"> Prefiro não informar</label>
+                    </div>
+                </section>
+                <div class="enviar">
+                    <button type="submit" name="enviar" id="enviar">Enviar</button>
                 </div>
             </form>
-        </section>
-    </main>
+            <div class="conteudo-secundario">
+                <div class="texto-secundario">
+                    <h2>Para você garantir seu apê com lazer para toda a família!</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
