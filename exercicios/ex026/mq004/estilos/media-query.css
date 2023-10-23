@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/*Typical Device Breakpoints
+LIMITES DE PIXELS
+
+Pequentas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Telas grandes: acima de 1200px 
+*/
+
+@media print { /*Impressão*/
+    /*Dentro da impressão, o Background não funciona*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+    }
+    #celular{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #impressora{
+        display: block;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+/*  JÁ TEM O SITE PARA DISPOSITIVOS MÓVEIS
+@media screen and (max-width: 600px) {
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
+}
+*/
+
+/*Tablet, Desktop e Telas grandes*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #celular{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+    #impressora{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+}
+@media screen and  (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #celular{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #impressora{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    #tv{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #celular{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #impressora{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+}
