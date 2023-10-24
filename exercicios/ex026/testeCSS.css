@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.corpo{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    flex-direction: row;
+    align-items: center;
+}
+.texto{
+    background-color: green;
+    display: inline-block;
+}
+.subtitulo{
+    width: 50%;
+}
+.bloco{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

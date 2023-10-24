@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    .cabecalho .logo-botoes{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cabecalho .texto-cabecalho{
+        padding: 30px;
+    }
+    .cabecalho .conteudo-cabecalho{
+        font-size: 0.7em;
+        color: white;
+        padding: 5px 7px;
+    }
+    .cabecalho .texto-cabecalho{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+    .cabecalho .conteudo-cabecalho .subtitulo{
+        font-size: 1.5em;
+        color: white;
+    }
+    .cabecalho .subtitulo-adicional{
+        font-size: 1.5em;
+    }
+    .cabecalho .email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .cabecalho .email input{
+        width: 95%;
+    }
+    .cabecalho .forms{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .cabecalho .forms button{
+        padding: 5px 15px;
+        background-color: red;
+        border-radius: 2px;
+        color: white;
+        border: none;
+    }
+    .cabecalho .forms select{
+        background-color: none;
+        border-radius: 8px;
+        border: none;
+        padding: 5px 1px;
+        background-color: rgb(14, 13, 13);
+        border: 2px solid white;
+        color: white;
+    }
+    .corpo .conteudo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+        gap: 40px;
+    }
+    .corpo .texto-conteudo{
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .corpo .texto-conteudo .titulo-conteudo{
+        font-weight: 800;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 768px - 1024px = telas menores, laptops */
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    .cabecalho .logo-botoes{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cabecalho .texto-cabecalho{
+        padding: 30px;
+    }
+    .cabecalho .conteudo-cabecalho{
+        font-size: 0.7em;
+        color: white;
+        padding: 30px 20px;
+    }
+    .cabecalho .texto-cabecalho{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+    .cabecalho .conteudo-cabecalho .subtitulo{
+        font-size: 1.5em;
+        color: white;
+    }
+    .cabecalho .subtitulo-adicional{
+        font-size: 1.5em;
+    }
+    .cabecalho .email{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        margin: 0px 50px;
+    }
+    .cabecalho .email input{
+        width: 400px;
+    }
+    .cabecalho .email button{
+        padding: 8px 50px;
+    }
+    .cabecalho .forms{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .cabecalho .forms button{
+        padding: 5px 20px;
+        background-color: red;
+        border-radius: 2px;
+        color: white;
+        border: none;
+    }
+    .cabecalho .forms select{
+        background-color: none;
+        border-radius: 8px;
+        border: none;
+        padding: 5px 1px;
+        background-color: rgb(14, 13, 13);
+        border: 2px solid white;
+        color: white;
+    }
+    .corpo .conteudo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+        gap: 40px;
+    }
+    .corpo .texto-conteudo{
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .corpo .texto-conteudo .titulo-conteudo{
+        font-weight: 800;
+    }
+}
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 960px) and (max-width: 1280px){
+    .cabecalho .logo-botoes{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cabecalho .texto-cabecalho{
+        padding: 30px;
+    }
+    .cabecalho .conteudo-cabecalho{
+        font-size: 0.7em;
+        color: white;
+        padding: 100px 40px;
+    }
+    .cabecalho .texto-cabecalho{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .cabecalho .conteudo-cabecalho .subtitulo{
+        font-size: 1.5em;
+        color: white;
+    }
+    .cabecalho .subtitulo-adicional{
+        font-size: 1.2em;
+    }
+    .cabecalho .email{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin: 0px 50px;
+    }
+    .cabecalho .email input{
+        width: 400px;
+    }
+    .cabecalho .email button{
+        padding: 8px 50px;
+    }
+    .cabecalho .forms{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .cabecalho .forms button{
+        padding: 5px 20px;
+        background-color: red;
+        border-radius: 2px;
+        color: white;
+        border: none;
+    }
+    .cabecalho .forms select{
+        background-color: none;
+        border-radius: 2px;
+        border: none;
+        padding: 5px 1px;
+        background-color: rgb(14, 13, 13);
+        border: 2px solid white;
+        color: white;
+    }
+    .corpo .conteudo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 100px 30px;
+        gap: 40px;
+    }
+    .corpo .texto-conteudo{
+        width: 50%;
+        font-size: 1.5em;
+    }
+    .corpo .texto-conteudo .titulo-conteudo{
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 60px;
+    }
+    .corpo .conteudo-direito{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:1280px){
+    .cabecalho .logo-botoes{
+        padding: 20px 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cabecalho .texto-cabecalho{
+        padding: 60px 150px;
+    }
+    .cabecalho .conteudo-cabecalho{
+        font-size: 0.7em;
+        color: white;
+        padding: 100px 40px;
+    }
+    .cabecalho .texto-cabecalho{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .cabecalho .conteudo-cabecalho .subtitulo{
+        font-size: 1.5em;
+        color: white;
+    }
+    .cabecalho .subtitulo-adicional{
+        font-size: 1.2em;
+    }
+    .cabecalho .email{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin: 0px 50px;
+    }
+    .cabecalho .email input{
+        width: 400px;
+    }
+    .cabecalho .email button{
+        padding: 8px 50px;
+    }
+    .cabecalho .forms{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .cabecalho .forms button{
+        padding: 5px 20px;
+        background-color: red;
+        border-radius: 2px;
+        color: white;
+        border: none;
+    }
+    .cabecalho .forms select{
+        background-color: none;
+        border-radius: 2px;
+        border: none;
+        padding: 5px 1px;
+        background-color: rgb(14, 13, 13);
+        border: 2px solid white;
+        color: white;
+    }
+    .corpo .conteudo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 220px 15px;
+        gap: 40px;
+    }
+    .corpo .texto-conteudo{
+        width: 50%;
+        font-size: 1.5em;
+    }
+    .corpo .texto-conteudo .titulo-conteudo{
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 60px;
+    }
+    .corpo .conteudo-direito{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+  
+
+
+
+
+
+
+  /* 1024px - 1200px = desktop */
+  @media (min-width: 1024px) {
+
+  }
+  
+  /* 1200 e + = telas maiores, tvs */
+  @media (min-width: 1200px) {
+
+  }
