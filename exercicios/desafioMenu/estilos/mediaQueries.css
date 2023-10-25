@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@media screen and (max-width:650px) {
+    #icon{
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+    }
+    .botoes{
+        display: none;
+    }
+    .menu-cabecalho{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .botoes{
+        display: none;
+    }
+}
