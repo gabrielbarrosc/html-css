@@ -15,8 +15,21 @@ header h1{
     text-align: center;
     padding: 10px;
 }
-menu{
+#icon-menu{
+    background-color: rgb(46, 45, 45);
     display: block;
+    color: white;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+}
+#icon-menu:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+menu{
+    display: none;
 }
 menu ul{
     list-style-type: none;
