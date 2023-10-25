@@ -74,6 +74,9 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.form input:focus{
+    background-color: white;
+}
 .botoes{
     display: flex;
     flex-direction: column;
@@ -83,6 +86,7 @@ body{
     padding: 8px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .botoes .entrar{
     background-color: var(--cor-verde);
@@ -90,6 +94,12 @@ body{
 }
 .botoes .EsSenha{
     border: 1px solid var(--cor-verde);
+}
+.entrar:hover{
+    background-color: #156658;
+}
+.EsSenha:hover{
+    background-color: #51c9b5;
 }
 .imagem{
     display: flex;
