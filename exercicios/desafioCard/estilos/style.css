@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    position: relative;
+    width: 100vw;
+    height: 98vh;
+}
+.corpo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.corpo-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    background-color: white;
+    padding: 3px;
+}
+.imagem{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+.preco{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+.preco #preco1{
+    color: red;
+}
+.preco #preco2{
+    font-weight: 700;
+    color: green;
+    font-size: 20px;
+}
