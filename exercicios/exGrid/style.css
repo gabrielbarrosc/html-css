@@ -27,28 +27,26 @@ container div{
 /*Template area*/
 
 .container{
-    background-color: #333;
-    border: 4px solid red;
-    padding: 10px;
+    border: 3px solid red;
+    background-color: rgb(32, 32, 32);
+    padding: 15px;
     display: grid;
-    gap: 5px;
     grid-template-areas: 
-    'header header header header'
-    'sidebar content content content'
-    'footer footer footer footer';
+    'header header header'
+    'sidebar conteudo conteudo conteudo'
+    'footer footer footer';
+    gap: 5px;
 }
 .container div{
-    background-color: #ccc;
+    background-color: gray;
     padding: 20px;
-    border: 1px solid blue;
+    border: 2px solid rgb(16, 16, 141);
 }
-
 #header{
     grid-area: header;
 }
 #sidebar{
     grid-area: sidebar;
-    height: 50vh;
 }
 #content{
     grid-area: content;
