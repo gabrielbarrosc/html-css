@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    width: 100vw;
+    height: 100vh;
+}
+.section-cabecalho{
+    background-image: url('../imagem/bg-st.jpg');
+    background-position: center right;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+.cabecalho{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+.cabecalho-direita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.links{
+    padding: 5px;
+    position: relative;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+}
+.links-cabecalho{
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.linha{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.social{
+    padding: 5px 25px;
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.icon-social{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+.pesquisa{
+    margin-left: 10px;
+}
+
+.texto-cabecalho{
+    font-size: 1.3em;
+    width: 50%;
+    color: white;
+    padding: 200px 40px;
+}
+.texto-cabecalho h1{
+    font-size: 2em;
+}
+.conteudo-texto{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    background-color: rgb(255, 247, 236);
+    padding: 10px;
+    border-radius: 6px;
+}
+.section-conteudo-1{
+    margin: 60px;
+}
+.section-conteudo-1 h2{
+    margin-bottom: 60px;
+}
+.section-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+
+}
+.imagem-card{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+.autor{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.foto-autor{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.section-conteudo-2{
+    position: relative;
+}
+.section-conteudo-2 h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgs-personagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.imagens{
+    height: 800px;
+}
+.img-1{
+    background-color: green;
+}
+.img-2{
+    background-color: rgb(49, 0, 128);
+}
+.img-3{
+    background-color: rgb(133, 243, 133);
+}
+.img-4{
+    background-color: rgb(19, 0, 128);
+}
+.img-5{
+    background-color: rgb(128, 0, 100);
+}
+.section-rodape{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: rgb(17, 17, 17);
+}
+.topico{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.topico h3{
+    font-weight: 800;
+}
