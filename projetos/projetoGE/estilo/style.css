@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 207, 207);
+}
+.cabecalho{
+    color: white;
+    padding: 15px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(40, 145, 40);
+}
+.menus{
+    display: flex;
+    gap: 25px;
+}
+.logo{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.button-busca input{
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(2, 65, 0, 0.486)
+}
+.button-busca input:focus{
+    outline: 0;
+    background-color: white;
+    width: 120%;
+    transition: 0.6s;
+}
+.conteudos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 350px 350px;
+    grid-template-areas: 
+    'b1 b2'
+    'b1 b3'
+    ;
+    gap: 15px;
+}
+.bloco{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    outline: none;
+    position: relative;
+}
+.b1{
+    position: relative;
+    grid-area: b1;
+}
+.bloco h1{
+    top: 50%;
+    left: 50%;
+    background-color: brown;
+}
+.bloco img{
+    opacity: 85%;
+    object-fit: cover;
+    transition: 0.5s;
+    height: 100%;
+}
+.bloco img:hover{
+    scale: 1.15;
+}
+.b2{
+    overflow: hidden;
+    grid-area: b2;
+}
+.b3{
+    overflow: hidden;
+    grid-area: b3;
+}
