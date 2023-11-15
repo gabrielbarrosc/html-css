@@ -10,6 +10,11 @@
 body{
     font-family: 'Sora';
 }
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
 .conteudo-principal{
     background-image: url('../img/bg-mulher-medindo.jpg');
     background-position: top right;
@@ -31,10 +36,11 @@ body{
     color: black;
     bottom: -20px;
     padding: 10px 100px;
-    background-color: #008031;
+    background-color: rgb(5, 61, 27);
     border-radius: 50px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.404);
 }
 .rodape-principal p{
     color: white;
