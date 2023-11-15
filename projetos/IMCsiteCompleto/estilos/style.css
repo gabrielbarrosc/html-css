@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Sora';
+    src: url('../font/Sora-Bold.ttf');
+}
+body{
+    font-family: 'Sora';
+}
+.conteudo-principal{
+    background-image: url('../img/bg-mulher-medindo.jpg');
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 60px;
+    position: relative;
+}
+.conteudo-principal .texto-conteudo{
+    font-size: 1.4em;
+    width: 50%;
+}
+.conteudo-principal .titulo-conteudo{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.rodape-principal{
+    position: absolute;
+    color: black;
+    bottom: -20px;
+    padding: 10px 100px;
+    background-color: #008031;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rodape-principal p{
+    color: white;
+    font-size: 1.3em;
+}

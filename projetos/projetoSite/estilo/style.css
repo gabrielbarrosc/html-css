@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.8em;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto';
+    background-image: url("../imagem/fundo-bg.jpg");
+    background-size: cover;
+}
+.conteudo{
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(13px);
+    display: inline-block;
+    padding: 70px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+}
+.titulo{
+    color: #09581a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+.dados{
+    font-size: 0.7em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+}
+.dados p{
+    color: #09581a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+.dados input{
+    margin-top: 5px;
+    border: none;
+    padding: 5px;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255) ;
+}
+#calc{
+    margin-top: 25px;
+    width: 100%;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: #15a334;
+    transition: background-color 0.6s;
+}
+#calc:hover{
+    cursor: pointer;
+    background-color: #09581a;
+    transition: 0.6s;
+}
+#resultado{
+    font-size: 0.7em;
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+}
