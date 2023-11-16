@@ -15,19 +15,50 @@ body{
     width: 100vw;
     height: 100vh;
 }
+.cabecalho{
+    padding: 25px 60px;
+    color: white;
+    background-color: rgb(5, 61, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links-cabecalho .links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.links-li{
+    list-style: none;
+}
+.links-li a{
+    text-decoration: none;
+    color: white;
+}
 .conteudo-principal{
     background-image: url('../img/bg-mulher-medindo.jpg');
     background-position: top right;
     background-size: cover;
-    background-attachment: fixed;
     padding: 150px 60px;
     position: relative;
 }
+.conteudo-principal .subtitulo-conteudo{
+    color: rgb(5, 61, 27);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+    border: 1px solid white;
+    border-radius: 15px;
+}
 .conteudo-principal .texto-conteudo{
     font-size: 1.4em;
-    width: 50%;
+    width: 45%;
 }
 .conteudo-principal .titulo-conteudo{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(32, 179, 44);
+    color: white;
     margin-bottom: 20px;
     font-size: 2em;
 }
@@ -44,5 +75,96 @@ body{
 }
 .rodape-principal p{
     color: white;
-    font-size: 1.3em;
+    font-size: 1.6em;
+}
+.calculadora-imc{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 2em;
+    padding: 60px;
+    background-image: linear-gradient(65deg, rgb(32, 179, 44), rgb(6, 61, 11));
+}
+.dados-imc{
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.13);
+    padding: 70px;
+    border-radius: 10px;
+    background-color: rgb(5, 61, 27);
+    display: inline-block;
+}
+.imc-input{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.imc-input input{
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    width: 320px;
+    margin-bottom: 15px;
+}
+.dados-imc #calc{
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 179, 44);
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.resultado-imc{
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.13);
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgb(5, 61, 27);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.resultado-imc .subtitulo-resultado{
+    font-size: 0.7em;
+}
+.resultado-imc .valor-resultado{
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+    padding: 35px;
+    border-radius: 100%;
+    background-color: rgb(32, 179, 44);
+    color: white;
+}
+.resultado-imc .texto-resultado{
+    display: none;
+    font-size: 0.5em;
+    text-align: center;
+    color: white;
+}
+.tabela-imc{
+    padding: 25px 60px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.tabela-imc p {
+    color: rgb(5, 61, 27);
+    font-size: 2.5em;
+}
+.tabela-imc .img-tabela{
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.13);
+    width: 50%;
+    height: 500px;
+    background-image: url('../img/tabela-imc.png');
+    background-size: cover;
+    border-radius: 20px;
+}
+.tabela-imc .link-tabela{
+    font-size: 1.2em;
+}
+.tabela-imc a{
+    color: rgb(5, 61, 27);
 }
