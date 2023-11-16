@@ -11,6 +11,8 @@ imc = peso/(altura*altura)
 
 if(altura == 0 || peso == 0){
     window.alert('[ERROR] VALOR INVÁLIDO OU NÃO INFORMADO')
+    valorResult.innerHTML = `0.0`
+    textoResult.style.display = 'none'
 }
 else if(imc < 18.5){
     valorResult.innerHTML = `${imc.toFixed(1)}`
