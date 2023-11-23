@@ -38,65 +38,64 @@ let sub = document.getElementById('sub').addEventListener('click', Subtracao)
 let soma = document.getElementById('som').addEventListener('click', Soma)
 let igual = document.getElementById('igual').addEventListener('click', Igual)
 
-
 let newResult = 0
-newResult = parseFloat(newResult)
-function buttonZero(){
-    zero = '0'
-    result.innerHTML += zero
-    newResult += zero
+function buttonZero(zero){
+    zero = 0
+    newResult = zero
+    result.innerHTML += newResult 
+    newResult + zero
     console.log(newResult)
 }
 function buttonOne(){
-    one = '1'
+    one = 1
     result.innerHTML += one
     newResult += one
     console.log(newResult)
 }
 function buttonTwo(){
-    two = '2'
+    two = 2
     result.innerHTML += two
     newResult += two
     console.log(newResult)
 }
 function buttonThree(){
-    three = '3'
+    three = 3
     result.innerHTML += three
     newResult += three
     console.log(newResult)
 }
 function buttonFour(){
-    four = '4'
+    four = 4
     result.innerHTML += four
     newResult += four
     console.log(newResult)
 }
 function buttonFive(){
-    five = '5'
+    five = 5
     result.innerHTML += five
     newResult += five
     console.log(newResult)
 }
 function buttonSix(){
-    six = '6'
+    six = 6
     result.innerHTML += six
     newResult += six
     console.log(newResult)
 }
 function buttonSeven(){
-    seven = '7'
+    seven = 7
     result.innerHTML += seven
     newResult += seven
     console.log(newResult)
 }
 function buttonEight(){
-    eight = '8'
+    eight = 8
     result.innerHTML += eight
     newResult += eight
     console.log(newResult)
 }
 function buttonNine(){
-    nine = '9'
+    nine = 9
     result.innerHTML += nine
     newResult += nine
     console.log(newResult)
