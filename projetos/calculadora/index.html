@@ -10,13 +10,40 @@
     <main class="container">
         <h1>Calculadora</h1>
         <table>
-            <tr class="first-row">
+            <tr class="row">
+                <td colspan="4" id="result"></td>
+            </tr>
+            <tr class="row first-row">
                 <td class="button" id="c">C</td>
                 <td class="button" id="ce">CE</td>
                 <td class="button" id="divisao">/</td>
                 <td class="button" id="multi">*</td>
             </tr>
+            <tr class="row second-row">
+                <td class="button" id="seven">7</td>
+                <td class="button" id="eight">8</td>
+                <td class="button" id="nine">9</td>
+                <td class="button" id="sub">-</td>
+            </tr>
+            <tr class="row three-row">
+                <td class="button" id="four">4</td>
+                <td class="button" id="five">5</td>
+                <td class="button" id="six">6</td>
+                <td class="button" id="som">+</td>
+            </tr>
+            <tr class="row four-row">
+                <td class="button" id="one">1</td>
+                <td class="button" id="two">2</td>
+                <td class="button" id="three">3</td>
+                <td class="button" id="igual" rowspan="2">=</td>
+            </tr>
+            <tr class="row four-row">
+                <td class="button" id="zero" colspan="2">0</td>
+                <td class="button" id="point">.</td>
+            </tr>
         </table>
     </main>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
