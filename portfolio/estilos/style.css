@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+:root{
+    --font-principal : 'Montserrat';
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: var(--font-principal);
+}
+.cabecalho{
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px 200px;
+    font-size: 1.3em;
+}
+.logo{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+}
+.links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.apresentacao{
+    padding: 150px 200px;
+    font-size: 2.6em;
+    background-image: url('../imagem/bg-frontEnd.jpg');
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.apresentacao h4 {
+    font-weight: 600;
+}
+.social{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-weight: 600;
+}
+.button-social{
+    border-radius: 0px 10px 0px 10px;
+    padding: 5px 20px;
+}
+.linkedin{
+    background-color: brown;
+}
+.github{
+    background-color: blueviolet;
+}
+.foto{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+}
+
+.sobre-mim{
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+}
+.sobre-mim .texto-sobre{
+    font-size: 1.3em;
+    width: 60%;
+}
+.minha-foto{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+}
