@@ -1,0 +1,25 @@
+header, .contato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(153, 255, 0);
+  padding: 10px 40px;
+}
+header nav ul, .contato nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+header nav ul li:hover, .contato nav ul li:hover {
+  background-color: white;
+}
+
+.contato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 10px 40px;
+}/*# sourceMappingURL=index.css.map */

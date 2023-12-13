@@ -1,0 +1,25 @@
+@mixin flexCenter($bg) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg;
+    padding: 10px 40px;
+}
+
+header{
+    @include flexCenter($primary);
+
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            li{
+                &:hover{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
