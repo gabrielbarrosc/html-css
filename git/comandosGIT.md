@@ -16,7 +16,7 @@ git status
 git diff
 - mostra o que foi alterado, mostra a diferença do antigo pro novo
 
-git merge
+git merge <nome-da-branch>
 - merge de ramificações, mescla elas
 
 git branch
